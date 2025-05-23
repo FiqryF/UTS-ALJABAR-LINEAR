@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Matriks 3x3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Operasi Matriks 3x3</h1>
+
+    <div class="form-group">
+      <label for="method">Pilih Metode:</label>
+      <select id="method">
+        <option value="">-- Pilih Metode --</option>
+        <option value="penjumlahan">Penjumlahan Matriks</option>
+        <option value="pengurangan">Pengurangan Matriks</option>
+        <option value="perkalian">Perkalian Matriks</option>
+        <option value="invers">Invers Matriks</option>
+        <option value="determinan">Determinan & Invers</option>
+        <option value="sarrus">Metode Sarrus</option>
+        <option value="kofaktor">Metode Kofaktor</option>
+      </select>
+    </div>
+
+    <div id="inputSection" class="input-section" style="display: none;">
+      <div id="matrixInput" class="matrix-container"></div>
+      <button id="calculate" class="btn">Hitung</button>
+    </div>
+
+    <div id="result" class="result-section"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
